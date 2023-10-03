@@ -68,7 +68,7 @@ export default function ComboboxDemo() {
             {frameworks.map((framework) => (
               <CommandItem
                 key={framework.value}
-                onSelect={(currentValue) => {
+                onSelect={(currentValue: React.SetStateAction<string>) => {
                   setValue(currentValue === value ? "" : currentValue)
                   setOpen(false)
                 }}

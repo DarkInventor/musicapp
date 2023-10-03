@@ -8,7 +8,7 @@ import { Index } from "../__registry__"
 import { styles } from "../registry/styles"
 
 export function rehypeComponent() {
-  return async (tree: UnistTree) => {
+  return async (tree: any) => {
     visit(tree , (node: UnistNode) => {
       // src prop overrides both name and fileName.
       const { value: srcPath } =

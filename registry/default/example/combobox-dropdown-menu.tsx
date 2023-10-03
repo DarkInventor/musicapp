@@ -83,7 +83,7 @@ export default function ComboboxDropdownMenu() {
                       {labels.map((label) => (
                         <CommandItem
                           key={label}
-                          onSelect={(value) => {
+                          onSelect={(value: React.SetStateAction<string>) => {
                             setLabel(value)
                             setOpen(false)
                           }}

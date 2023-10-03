@@ -95,7 +95,7 @@ export default function ComboboxPopover() {
                 {statuses.map((status) => (
                   <CommandItem
                     key={status.value}
-                    onSelect={(value) => {
+                    onSelect={(value: string) => {
                       setSelectedStatus(
                         statuses.find((priority) => priority.value === value) ||
                           null
